@@ -1,7 +1,7 @@
-Mobility:
+# Mobilty
 Mobility is a Django-based application that provides calculate the price according to pricing model and input wait time and distance for automobiles.
 
-Prerequisites:
+## Prerequisites:
 
 Python 3.x
 Django (latest version)
@@ -10,12 +10,12 @@ Clone the repository:
 
 
 
-Install Dependencies:
+## Install Dependencies:
 
 pip install -r requirements.txt
 
 
-Run Migrations:
+## Run Migrations:
 
 python manage.py makemigrations
 python manage.py migrate
@@ -25,9 +25,9 @@ Start the Development Server:
 python manage.py runserver
 Your project will be accessible at http://localhost:8000/.
 
-API Endpoints:
+## API Endpoints:
 
-1. Home Endpoint:
+### 1. Home Endpoint:
 URL: /
 Method: GET
 Description: Test endpoint to ensure the Django application is running.
@@ -36,7 +36,7 @@ Status Code: 200 OK
 Content: "Hello, Django!"
 
 
-2. Manage Pricing Configuration:
+### 2. Manage Pricing Configuration:
 URL: /manage_pricing_config/
 Methods: GET, POST
 Description: View and manage pricing configurations.
@@ -64,7 +64,7 @@ json
 }
 
 
-3. Pricing Calculator Endpoint:
+### 3. Pricing Calculator Endpoint:
 URL: /calculate_price/
 Method: POST
 Description: Calculate pricing based on provided input data.
