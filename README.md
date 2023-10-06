@@ -16,27 +16,29 @@ pip install -r requirements.txt
 
 
 ## Run Migrations:
-
+```
 python manage.py makemigrations
 python manage.py migrate
 Start the Development Server:
-
-
+```
+```
 python manage.py runserver
 Your project will be accessible at http://localhost:8000/.
-
+```
 ## API Endpoints:
 
 ### 1. Home Endpoint:
+```
 URL: /
 Method: GET
 Description: Test endpoint to ensure the Django application is running.
 Response:
 Status Code: 200 OK
 Content: "Hello, Django!"
-
+```
 
 ### 2. Manage Pricing Configuration:
+```
 URL: /manage_pricing_config/
 Methods: GET, POST
 Description: View and manage pricing configurations.
@@ -62,9 +64,10 @@ json
 {
   "message": "Pricing configuration created successfully."
 }
-
+```
 
 ### 3. Pricing Calculator Endpoint:
+```
 URL: /calculate_price/
 Method: POST
 Description: Calculate pricing based on provided input data.
@@ -100,3 +103,4 @@ Copy code
 {
   "error": "No active pricing configuration found for the specified tier and day."
 }
+```
